@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         mTextView = (TextView) findViewById(R.id.textView);
         mButton = (Button) findViewById(R.id.button);
 
-        View.OnClickListener firstClickListner = new View.OnClickListener() {
+        View.OnClickListener firstClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String text = mEditText.getText().toString();
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                 mEditText.setText("");
             }
         };
-        mButton.setOnClickListener(firstClickListner);
+        mButton.setOnClickListener(firstClickListener);
 
     }
 }
